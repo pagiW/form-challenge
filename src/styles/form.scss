@@ -25,7 +25,7 @@
             justify-content: center;
             flex-direction: column;
             position: relative;
-            left: 425px;
+            left: 90%;
             bottom: 50px;
             .palo {
                 width: 2px;
@@ -125,6 +125,39 @@
         }
         button:hover, button:focus {
             background-color: #46df9c;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .form {
+        form {
+            .warning {
+                left: 85%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 25px 0;
+        form {
+            width: 90%;
+        }
+        .offer {
+            width: 90%;
+            padding: 15px;
+            text-align: center;
+        }
+        .text {
+            flex-direction: column;
+            p {
+                text-align: center;
+            }
         }
     }
 }

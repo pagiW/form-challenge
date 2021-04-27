@@ -44,6 +44,7 @@ body {
         align-items: center;
         justify-content: center;
         border-radius: 15px;
+        text-align: center;
         button {
             width: 150px;
             color: white;
@@ -58,5 +59,21 @@ body {
         button:hover, button:focus {
             background-color: #46df9c;
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #app {
+        flex-direction: column;
+        position: absolute;
+        top: 200px;
+    }
+    #modal {
+            .portal {
+                height: 150vh;
+            }
+            .modal {
+                width: 85vw;
+            }
     }
 }
